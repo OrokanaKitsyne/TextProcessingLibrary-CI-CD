@@ -1,0 +1,15 @@
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\TextProcessingLibrary.dll
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\TextProcessingLibrary.pdb
+D:\source\TextProcessingLibrary\TextProcessingLibrary\obj\Debug\TextProcessingLibrary.csproj.AssemblyReference.cache
+D:\source\TextProcessingLibrary\TextProcessingLibrary\obj\Debug\TextProcessingLibrary.csproj.CoreCompileInputs.cache
+D:\source\TextProcessingLibrary\TextProcessingLibrary\obj\Debug\TextProcessingLibrary.dll
+D:\source\TextProcessingLibrary\TextProcessingLibrary\obj\Debug\TextProcessingLibrary.pdb
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.abstractions.dll
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.assert.dll
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.core.dll
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.execution.desktop.dll
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.abstractions.xml
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.assert.xml
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.core.xml
+D:\source\TextProcessingLibrary\TextProcessingLibrary\bin\Debug\xunit.execution.desktop.xml
+D:\source\TextProcessingLibrary\TextProcessingLibrary\obj\Debug\TextProc.625BDD6D.Up2Date
