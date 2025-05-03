@@ -1,0 +1,48 @@
+name: .NET Build and Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  DOTNET_VERSION: '9.0.x'  # Версия .NET SDK
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest  # или ubuntu-latest, если предпочитаете Linux
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    # Установка .NET SDK
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+    
+    # Восстановление зависимостей
+    - name: Restore dependencies
+      run: dotnet restore
+    
+    # Сборка проекта
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    
+    # Запуск тестов
+    - name: Test
+      run: dotnet test --configuration Release --no-build --verbosity normal
+    
+    # (Опционально) Создание NuGet пакета
+    - name: Pack
+      if: github.ref == 'refs/heads/main'
+      run: dotnet pack --configuration Release --no-restore --output ./artifacts
+    
+    # (Опционально) Загрузка артефактов
+    - name: Upload artifacts
+      if: github.ref == 'refs/heads/main'
+      uses: actions/upload-artifact@v3
+      with:
+        name: package
+        path: ./artifacts
